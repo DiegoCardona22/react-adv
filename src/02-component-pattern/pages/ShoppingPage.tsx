@@ -1,4 +1,5 @@
 import { ProductCard, ProductImage, ProductTitle, ProductButtons } from "../components";
+import '../styles/custom-styles.css';
 
 export const ShoppingPage = () => {
 
@@ -19,16 +20,31 @@ export const ShoppingPage = () => {
           flexDirection: "row"
         }}  
       >
-        <ProductCard product={ product }>
-          <ProductCard.Image img={ product.img } />
-          <ProductCard.Title />
-          <ProductCard.Buttons />
+        <ProductCard product={ product } className="bg-dark text-white">
+          <ProductCard.Image className="custom-image" img={ product.img } />
+          <ProductCard.Title className="text-bold" />
+          <ProductCard.Buttons className="custom-buttons" />
         </ProductCard >
 
-        <ProductCard product={ product }>
-          <ProductImage img={ product.img } />
-          <ProductTitle />
-          <ProductButtons />
+        <ProductCard product={ product } className="bg-dark text-white">
+          <ProductImage className="custom-image" img={ product.img } />
+          <ProductTitle className="text-bold"/>
+          <ProductButtons className="custom-buttons"/>
+        </ProductCard >
+
+        <ProductCard product={ product } style={{
+          backgroundColor: "red",
+        }}>
+          <ProductImage img={ product.img } style={{
+            boxShadow: "0 0 10px red"
+          }}/>
+          <ProductTitle style={{
+            color: "blue"
+          }} />
+          <ProductButtons style={{
+            display: "flex",
+            justifyContent: "end"
+          }}/>
         </ProductCard >
       </div>
     </div>
