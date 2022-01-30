@@ -1,22 +1,28 @@
 .bg-dark {
-  background-color: #343a40;
+  background-color: #343a40 !important;
 }
 
 .text-white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .custom-buttons button, .custom-buttons div {
-  color: #fff;
-  border-color: white;
+  color: #fff !important;
+  border-color: white !important;
 }
 
 .custom-image {
-  padding: 10px;
-  border-radius: 20px;
-  width: calc(100% - 20px);
+  padding: 10px !important;
+  border-radius: 20px !important;
+  width: calc(100% - 20px) !important;
+}
+
+.shopping-cart {
+  position: fixed !important;
+  top: 0px !important;
+  right: 10px !important;
 }
